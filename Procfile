@@ -1,1 +1,1 @@
-web: java -jar build/libs/Language-Study-0.0.1-SNAPSHOT.jar
+web: java -jar build/libs/language-study-start-0.0.1.jar
