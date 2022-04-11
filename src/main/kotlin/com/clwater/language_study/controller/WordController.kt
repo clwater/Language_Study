@@ -23,6 +23,6 @@ class WordController(
     @ApiOperation(value="获取所有")
     @RequestMapping(value = "/list", method = arrayOf(RequestMethod.POST))
     fun wordList(@RequestParam page: Int) : ResponseEntity<ResultModel> {
-        return ResultModel(wordMapper.list(page * Constancts.WORD_LIST_OFFSET)).ok()
+        return ResultModel(wordMapper.list(Constancts.WORD_LIST_OFFSET, page * Constancts.WORD_LIST_OFFSET)).ok()
     }
 }

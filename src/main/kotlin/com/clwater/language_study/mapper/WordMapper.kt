@@ -7,6 +7,6 @@ import org.apache.ibatis.annotations.Select
 
 @Mapper
 interface WordMapper {
-    @Select("select * from word order by id limit  10 offset #{page}")
-    fun list(@Param("page") page: Int): List<Word>
+    @Select("select * from word order by id limit #{limit} offset #{page}")
+    fun list(@Param("limit") limit: Int, @Param("page") page: Int): List<Word>
 }
