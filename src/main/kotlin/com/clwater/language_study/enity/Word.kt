@@ -6,5 +6,8 @@ class Word(val id: Int,
            val eg: String ?,
            val word_src: String ?,
            val category: String ?,
-           val learn_order: Int) {
+           val learn_order: Int,
+           val phonetic_symbol: String?) {
+
+
 }
